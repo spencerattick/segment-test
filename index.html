@@ -46,6 +46,7 @@
             email: email, 
             name: fullname
         });
+        analytics.alias('1234');
         analytics.track('destination submitted', user, function() {
             window.location.href = "";
         });
