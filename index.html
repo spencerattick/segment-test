@@ -49,7 +49,12 @@
         analytics.alias('1234');
         analytics.track('form data collected', user, function() {
             window.location.href = "";
-        });
+        },
+      "integrations": {
+        "All": false,
+        "Mixpanel": false,
+        "Google Analytics": true
+      });
       }
     </script>
 </body> 
