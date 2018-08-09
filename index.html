@@ -47,17 +47,24 @@
             name: fullname
         });
 //         analytics.alias('1234');
-//           analytics.track('NEW TRACK', user, function() {
-//             window.location.href = "";
-//         });
-        analytics.track('NOT MIX', user, function() {
+          analytics.track('NEW GA PARAMS', user, function() {
             window.location.href = "";
-        },
-          "integrations": {
-            "All": false,
-            "Mixpanel": false,
-            "Google Analytics": true
-          });
+            category: 'Account',
+            label: 'Premium',
+            value: 50
+        });
+//         analytics.track('NEW GA PARAMS', user, function() {
+//             window.location.href = "";
+//             category: 'Account',
+//             label: 'Premium',
+//             value: 50
+//         }
+//                         ,
+//           "integrations": {
+//             "All": false,
+//             "Mixpanel": false,
+//             "Google Analytics": true
+//           });
       }
     </script>
 </body> 
