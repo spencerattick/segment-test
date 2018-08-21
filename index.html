@@ -44,7 +44,16 @@
         };
         analytics.identify('NEW IDENTIFYYY', {
             email: email, 
-            name: fullname
+            name: fullname,
+              context: {
+                campaign: {
+                  name: "TPS Innovation Newsletter",
+                  source: "Newsletter",
+                  medium: "email",
+                  term: "tps reports",
+                  content: "image link"
+                }
+              }
         });
            analytics.track('destination SUBMITTED', user, function() {
             window.location.href = "";
