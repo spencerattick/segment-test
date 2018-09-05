@@ -44,8 +44,7 @@
             details: details
         };
 
-        analytics.identify({
-          userId: '34',
+        analytics.identify('34', {
           context: {
             device: {
               id: 44444441
@@ -54,9 +53,8 @@
 
         });
 
-        analytics.track({
+        analytics.track("web??", {
           userId: '34',
-          event: 'web??',
           context: {
             device: {
               id: 44444441
