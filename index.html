@@ -43,12 +43,25 @@
             destination: destination, 
             details: details
         };
-        analytics.identify('1234', {
-            email: email, 
-            name: fullname
+
+        analytics.identify({
+          userId: '34',
+          context: {
+            device: {
+              id: 44444441
+            }
+          }
+
         });
-        analytics.track('destination submitted', user, function() {
-            window.location.href = "";
+
+        analytics.track({
+          userId: '34',
+          event: 'web??',
+          context: {
+            device: {
+              id: 44444441
+            }
+          }
         });
       }
 </script>
