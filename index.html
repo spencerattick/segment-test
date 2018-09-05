@@ -6,7 +6,7 @@
     <script>
       !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
       analytics.load("cHAKBpweBEHhArk4dEfoox5CkwfUbYFx");
-      analytics.page("newTestPage");
+      analytics.page("webPage?");
       }}();
     </script>
 </head> 
@@ -42,71 +42,28 @@
             destination: destination, 
             details: details
         };
-        analytics.identify('testCloud', {
-            email: email, 
-            name: fullname,
-        });
-           analytics.track('destination SUBMITTED', user, function() {
-            window.location.href = "";
-        });
-          window.location = 'http://www.google.com'
-      }
-//         analytics.track({
-//           userId: '019mr8mf4r',
-//           event: 'TRACK TESTT',
-//           properties: {
-//             revenue: 39.95,
-//             shippingMethod: '2-day'
-//           },
-//           context: {
-//             campaign: {
-//               name: "TPS Innovation Newsletter",
-//               source: "Newsletter",
-//               medium: "email",
-//               term: "tps reports",
-//               content: "image link"
-//             }
-//           }
-//         });
-        
-//         analytics.ready(function() {
-//             function getQueryParam(url, param) {
-//                 // Expects a raw URL
-//                 param = param.replace(/[[]/, "\[").replace(/[]]/, "\]");
-//                 var regexS = "[\?&]" + param + "=([^&#]*)",
-//                     regex = new RegExp( regexS ),
-//                     results = regex.exec(url);
-//                 if (results === null || (results && typeof(results[1]) !== 'string' && results[1].length)) {
-//                   return '';
-//                   } else {
-//                   return decodeURIComponent(results[1]).replace(/\W/gi, ' ');
-//                   }
-//                 };
-//                 function campaignParams() {
-//                 var campaign_keywords = 'utm_source utm_medium utm_campaign utm_content utm_term'.split(' ')
-//                     , kw = ''
-//                     , params = {}
-//                     , first_params = {};
-//                 var index;
-//                 for (index = 0; index < campaign_keywords.length; ++index) {
-//                   kw = getQueryParam(document.URL, campaign_keywords[index]);
-//                   if (kw.length) {
-//                     params[campaign_keywords[index] + ' [last touch]'] = kw;
-//                   }
-//                 }
-//                 for (index = 0; index < campaign_keywords.length; ++index) {
-//                   kw = getQueryParam(document.URL, campaign_keywords[index]);
-//                   if (kw.length) {
-//                     first_params[campaign_keywords[index] + ' [first touch]'] = kw;
-//                   }
-//                 }
-//                 mixpanel.people.set(params);
-//                 mixpanel.people.set_once(first_params);
-//                 mixpanel.register(params);
-//                 }
-//                 campaignParams();
-//                 mixpanel.identify()
-//         });
+
+
+          
+analytics.identify({
+  userId: '34',
+  context: {
+    device: {
+      id: 44444441
+    }
+  }
+
+});
+
+analytics.track({
+  userId: '34',
+  event: 'web??',
+  context: {
+    device: {
+      id: 44444441
+    }
+  }
+});
     </script>
 </body> 
 </html>
