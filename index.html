@@ -54,11 +54,23 @@
 
         });
           
+//       analytics.track('Product Viewed', {
+//           userId: '12345',
+// //           event: 'Product Viewed',
+//             nonInteraction: 1
+//         });
+          
       analytics.track('Product Viewed', {
-          userId: '12345',
-//           event: 'Product Viewed',
-            nonInteraction: 1
-        });
+        product_id: 1234,
+        sku: 5678,
+        name: 'Test,
+        price: 10,
+        url: 'test.com',
+        category: 'test,
+        brand: 'test,
+        trade: 'test,
+        nonInteraction: 1
+       }); 
 
         analytics.track("UA TEST", {
           userId: '12345',
