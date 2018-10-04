@@ -28,7 +28,7 @@
     <br><br> 
     Email: <input name="email"  size="75" type="email"/> 
     <br><br>
-    <input name="submit" type="submit" value="submit"/>
+    <input name="submit" type="submit" value="submit" id="testLink"/>
 </form> 
     <script type="text/javascript">
       function identify(e){
@@ -78,7 +78,7 @@
         });
       }
         
-   var link = document.getElementsByTagName('h1');
+   var link = document.getElementById('testLink');
 
     analytics.trackLink(link, 'Clicked Free-Trial Link', {
       plan: 'Enterprise'
