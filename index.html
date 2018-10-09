@@ -50,14 +50,13 @@
             details: details
         };
 
-//         analytics.identify({
-//           context: {
-//             device: {
-//               id: 4444444
-//             }
-//           }
-
-//         });
+        analytics.identify('34', {
+          context: {
+            device: {
+              id: 4444444
+            }
+          }
+        });
           
 //       analytics.track('Product Viewed', {
 //           userId: '12345',
@@ -66,7 +65,7 @@
 //         });
           
       analytics.track('Product Viewed', {
-        userId: 23,
+        userId: 233,
         product_id: 1234,
         sku: 5678,
         name: 'Test',
