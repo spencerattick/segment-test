@@ -56,30 +56,29 @@
 //             nonInteraction: 1
 //         });
           
-      analytics.track('Product Viewed', {
-        userId: 233,
-        product_id: 1234,
-        sku: 5678,
-        name: 'Test',
-        price: 10,
-        url: 'test.com',
-        category: 'test',
-        brand: 'test',
-        trade: 'test',
-        nonInteraction: 1
-       }); 
+//       analytics.track('Product Viewed', {
+//         userId: 233,
+//         product_id: 1234,
+//         sku: 5678,
+//         name: 'Test',
+//         price: 10,
+//         url: 'test.com',
+//         category: 'test',
+//         brand: 'test',
+//         trade: 'test',
+//         nonInteraction: 1
+//        }); 
 
-        analytics.track("UA TEST", {
-          userId: '12345',
+        analytics.track("VERO TESTTTT", {
 //           nonInteraction: 1
-        });
+        }, {integrations: {"Vero": false}});
       }
         
    var link = document.getElementById('testLink');
 
-    analytics.trackLink(link, 'Clicked Free-Trial Link', {
-      plan: 'Enterprise'
-    });
+//     analytics.trackLink(link, 'Clicked Free-Trial Link', {
+//       plan: 'Enterprise'
+//     });
 </script>
 </body> 
 </html>
