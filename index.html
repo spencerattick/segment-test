@@ -8,13 +8,19 @@
       analytics.load("cHAKBpweBEHhArk4dEfoox5CkwfUbYFx");
       analytics.page("TestPage");
       }}();
-      (function(o){var b="https://api.autopilothq.com/anywhere/",t="0f394fd8fc164fd69ef961270c0ec2ca9116091dca16455d9557a604ecaf87c3",a=window.AutopilotAnywhere={_runQueue:[],run:function(){this._runQueue.push(arguments);}},c=encodeURIComponent,s="SCRIPT",d=document,l=d.getElementsByTagName(s)[0],p="t="+c(d.title||"")+"&u="+c(d.location.href||"")+"&r="+c(d.referrer||""),j="text/javascript",z,y;if(!window.Autopilot) window.Autopilot=a;if(o.app) p="devmode=true&"+p;z=function(src,asy){var e=d.createElement(s);e.src=src;e.type=j;e.async=asy;l.parentNode.insertBefore(e,l);};y=function(){z(b+t+'?'+p,true);};if(window.attachEvent){window.attachEvent("onload",y);}else{window.addEventListener("load",y,false);}})({});
         
         
         (function() { window.satismeter = window.satismeter || function() {(window.satismeter.q = window.satismeter.q || []).push(arguments);};window.satismeter.l = 1 * new Date();var script = document.createElement("script");var parent = document.getElementsByTagName("script")[0].parentNode;script.async = 1;script.src = "https://app.satismeter.com/satismeter.js";parent.appendChild(script);})();
-              satismeter({
-                writeKey: "GkoLq5Sn1YMfahSx"
-              });
+
+          satismeter({
+            writeKey: "GkoLq5Sn1YMfahSx",
+            userId: "1234", // TODO Replace with current user unique ID (required)
+            traits: {
+              name: "John Doe", // TODO Replace with current user name (optional)
+              email: "john@doe.com", // TODO Replace with current user email (optional)
+              createdAt: "2019-01-20T22:03:59.872Z" // TODO Replace with date when user was registered (optional)
+            }
+          });
     </script>
 
 </head> 
