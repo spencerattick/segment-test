@@ -9,19 +9,20 @@
 analytics.load("cHAKBpweBEHhArk4dEfoox5CkwfUbYFx");
 }}();
 
-console.log(analytics.user(), 'userid')
-console.log(analytics.user().anonymousId(), 'anonymousId')
+// console.log(analytics.user(), 'userid')
+// console.log(analytics.user().anonymousId(), 'anonymousId')
 
 
-if (!analytics.user().id()) {
+// if (!analytics.user().id()) {
 
   analytics.identify('12091906-01011992', {
     name: 'TEST NAME',
     email: 'TESTEMAIL@EMAIL.COM'
   });
 
-}
+// }
   analytics.page();
+
 
 
 
