@@ -94,6 +94,15 @@ analytics.identify('123456', {
 //     analytics.trackLink(link, 'Clicked Free-Trial Link', {
 //       plan: 'Enterprise'
 //     });
+        document.addEventListener("keypress", function onPress(event) {
+   
+        console.log('something')
+        var keyCounter = document.getElementById('key-counter');
+            var number = computerScore.innerHTML;
+            number++;
+            keyCounter.innerHTML = number;
+    
+});
 </script>
 </body> 
 </html>
