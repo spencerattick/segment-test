@@ -9,26 +9,18 @@
   }}();
 </script>
 
-<!--  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
- -->
 </head> 
 <body> 
-<!--     <amp-analytics type="segment">
-<script type="application/json">
-  {
-    "vars": {
-      "writeKey": "PQxm7qAMKBSoygn8on8pAdqWSFV4j6RO",
-      "name": "My Page Name"
-    }
-  }
-</script>
-</amp-analytics> -->
+
 <h1 id="test">What is your favorite place to travel?TEST</h1> 
 <p>First test paragraph.</p>  
 <p>Second test paragraph.</p>  
 
     <h2>Key Pressed</h2>
     <p id="key-counter"> 0 </p>
+    
+    <h2>Mouse Moved</h2>
+    <p id="mouse-counter"> 0 </p>
 
 <form name="travel" onsubmit="identify(event)">
      What is your favorite travel destination?
@@ -94,15 +86,21 @@ analytics.identify('123456', {
 //     analytics.trackLink(link, 'Clicked Free-Trial Link', {
 //       plan: 'Enterprise'
 //     });
-        document.addEventListener("keypress", function onPress(event) {
-   
+       document.addEventListener("keypress", function onPress(event) {
         console.log('something')
         var keyCounter = document.getElementById('key-counter');
             var number = keyCounter.innerHTML;
             number++;
             keyCounter.innerHTML = number;
-    
-});
+       });
+        
+       document.addEventListener("mousemove", function onPress(event) {
+        console.log('something')
+        var mouseCounter = document.getElementById('mouse-counter');
+            var number = mouseCounter.innerHTML;
+            number++;
+            mouseCounter.innerHTML = number;
+       });
 </script>
 </body> 
 </html>
