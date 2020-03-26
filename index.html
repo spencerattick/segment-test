@@ -29,6 +29,20 @@
     <input name="submit" type="submit" value="submit" id="testLink"/>
 </form> 
     <script type="text/javascript">
+        var player;
+        var apiKey = 'xxxxxxxxxxxxxxxxxxxxx';
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+            height: '390',
+            width: '640',
+            videoId: 'M7lc1UVf-VE'
+            });
+            var ytAnalytics = new window.videoPlugins.YouTubeAnalytics(player, apiKey);
+            ytAnalytics.initialize();
+        }
+
+        
+        
       function identify(e){
         e.preventDefault();
         var form = e.target;
