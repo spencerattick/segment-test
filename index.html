@@ -41,7 +41,13 @@
             var ytAnalytics = new window.videoPlugins.YouTubeAnalytics(player, apiKey);
             ytAnalytics.initialize();
         }
+        
+        var form = document.getElementById('formTest');
 
+        analytics.trackForm(form, 'Signed Up', {
+          plan: 'Premium',
+          revenue: 99.00
+        });
         
         
       function identify(e){
