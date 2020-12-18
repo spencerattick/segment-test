@@ -23,13 +23,20 @@ SOMETHING
   <input name="name" value="John">
   <input name="surname" value="Smith">
 </form>
+  
+  <article>
+  <header>
+    <h1>A heading here</h1>
+    <p>Posted by John Doe</p>
+    <p>Some additional information here</p>
+  </header>
+  <p>Lorem Ipsum dolor set amet....</p>
+</article>
 
 <script>
   // pre-fill FormData from the form
-  let formData = new FormData(document.forms.person);
+  let formData = new FormData(document.getElementsByTagName("header")[0]);
 
-  // add one more field
-  formData.append("middle", "Lee");
 
   // send it out
   let xhr = new XMLHttpRequest();
