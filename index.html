@@ -19,31 +19,9 @@
 
 <body>
 SOMETHING
-  <form name="person">
-  <input name="name" value="Jane">
-  <input name="surname" value="Smith">
-</form>
+
   
-  <article>
-  <header>
-    <h1>A heading here</h1>
-    <p>Posted by John Doe</p>
-    <p>Some additional information here</p>
-  </header>
-  <p>Lorem Ipsum dolor set amet....</p>
-</article>
 
-<script>
-  // pre-fill FormData from the form
-  let formData = new FormData(document.getElementsByTagName("form")[0]);
-
-
-  // send it out
-  let xhr = new XMLHttpRequest();
-  xhr.open("POST", "https://6cee2eeda3507dafb890d004ac8fe6e8.m.pipedream.net");
-  xhr.send(formData);
-
-  xhr.onload = () => alert(xhr.response);
-</script>
+<select id="frequency" class="" name="attribute_frequency" data-attribute_name="attribute_frequency" data-show_option_none="yes"><option value="">Choose an option</option><option value="EVERY WEEK" class="attached enabled">EVERY WEEK</option><option value="EVERY 2 WEEKS" class="attached enabled">EVERY 2 WEEKS</option><option value="EVERY 3 WEEKS" class="attached enabled">EVERY 3 WEEKS</option><option value="EVERY 4 WEEKS" class="attached enabled">EVERY 4 WEEKS</option><option value="PREMIUM WEEKLY - SYDNEY ONLY" class="attached enabled">PREMIUM WEEKLY - SYDNEY ONLY</option></select>
 </body>
 </html>
