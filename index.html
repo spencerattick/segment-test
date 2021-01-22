@@ -10,8 +10,10 @@
 
 
   <script>
-   let customMessageId = function ({ payload, next, integrations }) {
-      payload.obj.messageId = "customMessageId";
+   const customMessageId = function ({ payload, next, integrations }) {
+      let count = 0;
+      count++;
+      payload.obj.messageId = `customMessageId${count}`;
       next(payload);
     };
     
