@@ -16,6 +16,11 @@
   analytics.addSourceMiddleware(function (input) {
               var next = input.next;
               var payload = input.payload;
+        if (payload.userId) {
+            console.log('userId present')
+            } else {
+            console.log('no userId')
+            }
               console.log("Segment fired an event: ", payload.type());
     console.log("UserId: ", payload.userId());
               next(payload);
