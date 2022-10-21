@@ -23,12 +23,13 @@
   analytics.load("cHAKBpweBEHhArk4dEfoox5CkwfUbYFx");
   analytics.page();
   
-  analytics.addSourceMiddleware(SMW1);
 
   let SMW1 = function({ payload, next, integrations }) {
     payload.obj.messageId = 'ajs-next-3dbe9e7c884432a98cb4c40307e55a82';
     next(payload);
   };
+    analytics.addSourceMiddleware(SMW1);
+
   }}();
   
 
@@ -38,6 +39,6 @@
 </head>
 
 <body>
-  SOMETHINGELSE5
+  SOMETHINGELSE6
 </body>
 </html>
