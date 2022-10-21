@@ -24,15 +24,14 @@
   analytics.page();
   
 
-  let SMW1 = function({ payload, next, integrations }) {
-    payload.obj.messageId = 'ajs-next-dd3b3a66229f8030f0f03e461d61732c';
-    next(payload);
-  };
+    let SMW1 = function({ payload, next, integrations }) {
+      payload.obj.messageId = 'ajs-next-dd3b3a66229f8030f0f03e461d61732c';
+      next(payload);
+    };
+
     analytics.addSourceMiddleware(SMW1);
 
   }}();
-  
-
 </script>
 
 
