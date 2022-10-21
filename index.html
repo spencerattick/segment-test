@@ -24,7 +24,7 @@
   analytics.page();
   }}();
   
-  addSourceMiddleware(SMW1);
+  analytics.addSourceMiddleware(SMW1);
 
   let SMW1 = function({ payload, next, integrations }) {
     payload.messageId = 'ajs-next-3dbe9e7c884432a98cb4c40307e55a82';
@@ -36,6 +36,6 @@
 </head>
 
 <body>
-  SOMETHINGELSE2
+  SOMETHINGELSE3
 </body>
 </html>
