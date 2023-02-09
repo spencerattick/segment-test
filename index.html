@@ -23,11 +23,8 @@
   analytics.load("cHAKBpweBEHhArk4dEfoox5CkwfUbYFx");
   }}();
   
-   console.log('READY FUNCTION')
    analytics.ready(function() {
-     console.log('READYYYY')
         gtag('get', 'G-PZB6H9QMHY', 'client_id', (client_id) => {
-            console.log('GTAG FUNCTION RAN')
             analytics.page({
               clientId: client_id
             });
